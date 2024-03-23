@@ -1,0 +1,152 @@
+.ToDos {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    min-height: 100vh;
+}
+
+.Todo{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 530px;
+    min-height: 200px;
+    background: #005AA7; 
+    background: -webkit-linear-gradient(to bottom, #FFFDE4, #0b6bbfa1);
+    background: linear-gradient(to bottom, #FFFDE4, #0b6bbf86);
+    box-shadow: rgba(3, 35, 62, 0.486) 0px 10px 20px, rgba(7, 66, 111, 0.717) 0px 6px 6px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h1{
+    font-family: cursive;
+    font-size: 40px;
+    color: #1b3f64;
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #70838d, -2px 1px #cdd2d5, -2px 3px #9da8ad, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+    cursor: default;
+}
+
+.AddTodo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AddTodo form {
+    display: flex;
+    gap: 10px;
+}
+
+.AddTodo input[type="text"] {
+    padding: 5px;
+    background-color: #ffffffe4;
+    border: 1px solid #afadad;
+    color: #333333e9;
+    width: 420px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    text-indent: 10px;
+    font-size: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+.AddTodo button {
+    padding: 5px 10px;
+    background-color: #72a0c19b;
+    text-shadow: 0 3px 5px #0a3153;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.AddTodo button:hover{
+    box-shadow: 0 3px 10px #0a3153;
+    transform: scale(0.9);
+}
+
+.taskBg{
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+    text-transform: capitalize;
+    border: 1px solid gray;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #ffffffe4;
+}
+
+.taskBg div{
+    display: flex;
+    align-items: center;
+}
+
+.AddTodo input:hover,
+.taskBg:hover{
+    border: none;
+    box-shadow: 0 3px 5px #0a3153;
+}
+
+.iconsDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number{
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.taskBg .done .task{
+    text-decoration: line-through;
+    opacity: 0.3;
+    flex: 1;
+}
+
+.iconsDiv i{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.fa-check{
+    color: rgb(8, 107, 8);
+    font-size: 28px;
+}
+
+.fa-trash{
+    color: rgb(154, 88, 88);
+}
+
+.taskBg .iconsDiv i:hover{
+    transform: scale(1.1);
+    text-shadow: 0 3px 5px #0a3153;
+}
+
+.fa-pencil{
+    color: #0a3153;
+}
